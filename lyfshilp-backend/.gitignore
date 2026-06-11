@@ -23,6 +23,7 @@ venv/
 env/
 
 # Testing
+.uv-cache/
 .pytest_cache/
 .coverage
 htmlcov/

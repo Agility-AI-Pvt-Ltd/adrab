@@ -12,8 +12,8 @@ services:
     rootDir: lyfshilp-backend
     plan: free
     region: singapore
-    buildCommand: python -m pip install --upgrade pip && pip install --retries 10 --default-timeout 120 -r requirements.txt
-    startCommand: python main.py
+    buildCommand: curl -LsSf https://astral.sh/uv/install.sh | sh && UV_HTTP_TIMEOUT=120 ~/.local/bin/uv sync --no-dev
+    startCommand: .venv/bin/python main.py
     healthCheckPath: /health
     envVars:
       - key: PYTHON_VERSION
