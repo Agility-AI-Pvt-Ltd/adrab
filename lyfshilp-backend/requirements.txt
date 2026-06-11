@@ -11,7 +11,8 @@ alembic==1.14.0
 # ── Auth & Security ───────────────────────────────────────────────────────────
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
-httpx==0.28.0                # Google OAuth HTTP calls
+httpx==0.28.0
+httpcore==1.0.9         
 
 # ── Config ────────────────────────────────────────────────────────────────────
 pydantic==2.10.3
